@@ -2,7 +2,7 @@
 import string
 
 key = 2
-# Define charset and shift ascii_lowercase by key
+# Define charset as ascii_lowercase and shift by key
 alphabet = string.ascii_lowercase
 shifted = alphabet[key:] + alphabet[:key]
 
