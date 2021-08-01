@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-# Hint: linkedlist.php
-
 import re
 from urllib.request import urlopen
 
