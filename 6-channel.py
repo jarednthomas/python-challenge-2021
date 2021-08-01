@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # Hint: now there are pairs (zip) 
-
 import io, re, requests, zipfile
 
 def get_comment(fname):
@@ -15,6 +14,7 @@ response = requests.get(url)
 zf = zipfile.ZipFile(io.BytesIO(response.content))
 #content = zf.extractall()
 
+''' Solution
 # Initial Nothing
 n = 90052
 
@@ -46,5 +46,6 @@ while True:
 # Print all comments found in order of nothings
 print("".join(comments))
 
+'''
 # hockey.html: it's in the air. look at the letters -> oxygen
 print(url.replace("channel.zip", "oxygen.html"))
