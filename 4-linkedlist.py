@@ -4,9 +4,9 @@
 import re
 from urllib.request import urlopen
 
-# n = "12345" Starting value for nothing
-# n = "63579" Break in chain
-n= "66831"  # Final nothing
+# n = "12345" # Starting value for nothing
+# n = "63579" # Break in chain
+n= "66831"    # Final nothing
 url = "http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=%s"
 regex = r"[0-9]{3,}"
 nothing = re.compile(regex)
