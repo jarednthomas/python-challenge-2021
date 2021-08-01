@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-# Hint: One small letter, surrounded by EXACTLY three big bodyguards on each of its sides.
-
 import re, requests
 from bs4 import BeautifulSoup, Comment
 
