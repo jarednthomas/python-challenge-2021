@@ -21,21 +21,21 @@ def lookSay(n):
     s = "11"
     for i in range(3, n + 1):
 
-        # prev value is checked at current, dummy variable
+        # prev value is checked at current (n+1), so dummy variable
         s += '$'
         l = len(s)
 
-        # Initialize counter variables
+        # Initialize counters
         cnt = 1
         tmp = ""
 
-        # Iterates over each j in string
+        # Iterate over each j in prev value for s
         for j in range(1, l):
 
             # If not matching
             if (s[j] != s[j - 1]):
 
-                # Count
+                # Save current count to tmp
                 tmp += str(cnt + 0) 
                 # Add to string
                 tmp += s[j - 1]
@@ -49,6 +49,7 @@ def lookSay(n):
         s = tmp
     return s
 
+# Above checks n - 1
 N = 31
 #print(lookSay(N))
 #print(len(lookSay(N)))
